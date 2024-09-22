@@ -1,0 +1,46 @@
+.circles {
+    width: 360px;
+    height: 360px;
+    border-radius: 100%;
+}
+
+.row {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-4 {
+    float: left;
+    display: block;
+    margin-right: 2.43902%;
+    width: 31.70732%;
+}
+
+.circle-container {
+    background-color: #ed1c24;
+    width: 360px;
+    height: 360px;
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.uppercase{
+    margin-top: 90px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 33px;
+    text-align: center;
+}
+
+.ptagdesc{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px; 
+    line-height: 20px;
+    text-align: center;
+}
+
