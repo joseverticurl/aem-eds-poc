@@ -31,6 +31,10 @@ nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li {
     color: #000;
 }
 
+main .hero.block div div p picture img {
+    height: 500px;
+}
+
 nav#nav .section.nav-sections .default-content-wrapper ul li picture:first-child img {
     display: block;
     max-width: 100%;
@@ -40,13 +44,15 @@ nav#nav .section.nav-sections .default-content-wrapper ul li picture:first-child
     width: 111px;
 }
 
+nav#nav .section.nav-sections .default-content-wrapper ul li picture:nth-child(2) img {
+    display: none;
+}
+
 nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li picture:first-child img {
     display: none !important;
 }
 
-nav#nav .section.nav-sections .default-content-wrapper ul li picture:nth-child(2) img {
-    display: none;
-}
+
 
 nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li picture:nth-child(2) img {
     width: auto;
@@ -129,5 +135,4 @@ main .hero.block div div p h1 span:nth-child(2) {
     letter-spacing: -2.07px;
     text-align: center;
     line-height: 76px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 6%);
 }
