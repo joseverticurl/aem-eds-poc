@@ -54,6 +54,13 @@ div.section>.default-content-wrapper h4#experienced-and-diverse-management-team~
     padding-top: 0;
 }
 
+div.section>.default-content-wrapper h4#part-of-the-genting-group~p {
+    align-self: flex-start;
+    margin-left: 0;
+    text-align: left;
+    margin-top: 0;
+}
+
 div.section>.default-content-wrapper h4#experienced-and-diverse-management-team~p~p {
     align-self: flex-start;
     margin-left: 0;
@@ -99,13 +106,6 @@ div.section>.default-content-wrapper h4#part-of-the-genting-group {
     color: #000;
     font-weight: 400;
     padding-top: 0;
-}
-
-div.section>.default-content-wrapper h4#part-of-the-genting-group~p {
-    align-self: flex-start;
-    margin-left: 0;
-    text-align: left;
-    margin-top: 0;
 }
 
 div.section>.default-content-wrapper h4#part-of-the-genting-group~p>a {
