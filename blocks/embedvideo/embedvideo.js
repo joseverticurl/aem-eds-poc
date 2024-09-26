@@ -8,7 +8,7 @@ export default function decorate(block) {
     iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`;
     iframe.frameBorder = '0';
     iframe.allowFullscreen = true;
-    block.innerHTML = "";
+    block.innerHTML = '';
     block.appendChild(iframe);
     if (blockContent[1]) {
       blockContent[1].classList.add('read-more');

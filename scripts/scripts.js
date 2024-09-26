@@ -116,7 +116,7 @@ async function loadLazy(doc) {
 function setScrollEventForNav() {
   const elementWrapper = document.querySelector('.nav-wrapper');
   const element = document.querySelector('#nav');
-  window.addEventListener('scroll', function () {
+  window.addEventListener('scroll', () => {
     const verticalScrollPosition = window.pageYOffset;
     if (verticalScrollPosition > 200) {
       elementWrapper.classList.add('scrolled-nav');
@@ -137,7 +137,6 @@ function loadDelayed() {
   window.setTimeout(() => {
     import('./delayed.js');
     setScrollEventForNav();
-    //setHeroCustomText();
   }, 3000);
   // load anything that can be postponed to the latest here
 }
