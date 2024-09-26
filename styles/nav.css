@@ -3,7 +3,7 @@ div.nav-wrapper {
 }
 
 div.nav-wrapper.scrolled-nav {
-    background-color: #ffffff !important;
+    background-color: #fff !important;
 }
 
 nav#nav {
@@ -11,12 +11,24 @@ nav#nav {
 }
 
 nav#nav.scrolled-nav {
-    background-color: #ffffff;
+    background-color: #fff;
     min-height: 60px;
 }
 
 nav#nav .section.nav-sections .default-content-wrapper {
     max-width: unset !important;
+}
+
+nav#nav .section.nav-sections .default-content-wrapper ul li {
+    flex: 0 0 12%;
+    padding-right: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+nav#nav .section.nav-sections .default-content-wrapper ul li ul li {
+    color: #000;
 }
 
 nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li {
@@ -25,6 +37,16 @@ nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li {
 
 nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li picture:first-child img {
     display: none !important;
+}
+
+nav#nav .section.nav-sections .default-content-wrapper ul li picture:first-child img {
+    width: 90%;
+    display: block;
+    max-width: 100%;
+    border: none;
+    margin: auto;
+    width: 111px;
+    height: 80px;
 }
 
 nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li picture:nth-child(2) img {
@@ -39,9 +61,6 @@ nav#nav .section.nav-brand {
     display: none;
 }
 
-nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul {
-    align-items: center !important;
-}
 
 nav#nav .section.nav-sections .default-content-wrapper ul {
     width: 100%;
@@ -50,12 +69,8 @@ nav#nav .section.nav-sections .default-content-wrapper ul {
     margin-top: 40px;
 }
 
-nav#nav .section.nav-sections .default-content-wrapper ul li {
-    flex: 0 0 12%;
-    padding-right: 0;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
+nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul {
+    align-items: center !important;
 }
 
 nav#nav .section.nav-sections .default-content-wrapper ul li::after {
@@ -69,22 +84,10 @@ nav#nav .section.nav-sections .default-content-wrapper ul li::after {
     border: none;
 } */
 
-nav#nav .section.nav-sections .default-content-wrapper ul li picture:first-child img {
-    width: 90%;
-    display: block;
-    max-width: 100%;
-    border: none;
-    margin: auto;
-    width: 111px;
-    height: 80px;
-}
+
 
 nav#nav .section.nav-sections .default-content-wrapper ul li picture:nth-child(2) img {
     display: none;
-}
-
-nav#nav .section.nav-sections .default-content-wrapper ul li ul li {
-    color: #000;
 }
 
 main {

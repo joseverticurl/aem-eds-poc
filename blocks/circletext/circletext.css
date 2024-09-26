@@ -105,7 +105,6 @@ div.circletext-container .circletext-wrapper .circletext .circle-container ul {
 
 div.circletext-container .circletext-wrapper .circletext .circle-container ul li {
     font-size: 1rem;
-    line-height: 22px;
     color: #fff;
     text-align: center;
     max-width: 280px;
@@ -116,7 +115,7 @@ div.circletext-container .circletext-wrapper .circletext .circle-container ul li
     padding-right: 3.2rem;
 }
 
-div.circletext-container .circletext-wrapper .circletext .circle-container ul li:before {
+div.circletext-container .circletext-wrapper .circletext .circle-container ul li::before {
     content: "• ";
     color: #fff;
 }
