@@ -14,9 +14,8 @@ export default async function decorate(block) {
   // decorate footer DOM
   block.textContent = '';
   const footer = document.createElement('div');
-  footer.classList.add('footer-container')
+  footer.classList.add('footer-container');
   const fragmentContent = fragment.firstElementChild;
-  console.log('fragmentContent - ', fragmentContent);
   const elements = fragmentContent && fragmentContent.querySelectorAll('p');
   if (elements && elements.length > 0) {
     const sectionLeft = document.createElement('div');
@@ -33,11 +32,5 @@ export default async function decorate(block) {
     footer.append(sectionLeft);
     footer.append(sectionRight);
   }
-
-  // while (fragment.firstElementChild) {
-  //   console.log('fragment.firstElementChild - ', fragment.firstElementChild);
-  //   footer.append(fragment.firstElementChild);
-  // }
-
   block.append(footer);
 }

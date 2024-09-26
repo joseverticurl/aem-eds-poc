@@ -113,6 +113,21 @@ async function loadLazy(doc) {
   loadFonts();
 }
 
+function setScrollEventForNav() {
+  const elementWrapper = document.querySelector('.nav-wrapper');
+  const element = document.querySelector('#nav');
+  window.addEventListener('scroll', function () {
+    const verticalScrollPosition = window.pageYOffset;
+    if (verticalScrollPosition > 200) {
+      elementWrapper.classList.add('scrolled-nav');
+      element.classList.add('scrolled-nav');
+    } else {
+      elementWrapper.classList.remove('scrolled-nav');
+      element.classList.remove('scrolled-nav');
+    }
+  });
+}
+
 /**
  * Loads everything that happens a lot later,
  * without impacting the user experience.
@@ -125,31 +140,6 @@ function loadDelayed() {
     //setHeroCustomText();
   }, 3000);
   // load anything that can be postponed to the latest here
-}
-
-function setScrollEventForNav() {
-  const elementWrapper = document.querySelector(".nav-wrapper");
-  const element = document.querySelector("#nav");
-  console.log('element - ', element);
-  window.addEventListener('scroll', function () {
-    const verticalScrollPosition = window.pageYOffset;
-    console.log('verticalScrollPosition - ', verticalScrollPosition);
-    const isActive = element.classList.contains('scrolled-nav');
-
-    if (verticalScrollPosition > 200) {
-      elementWrapper.classList.add('scrolled-nav');
-      element.classList.add('scrolled-nav');
-    } else {
-      elementWrapper.classList.remove('scrolled-nav');
-      element.classList.remove('scrolled-nav');
-    }
-  });
-}
-
-function setHeroCustomText() {
-  const h1 = document.getElementById('companyoverview');
-  const parts = h1.innerHTML.split('<br>');
-  h1.innerHTML = `<span class="company">${parts[0]}</span><br><span class="overview">${parts[1]}</span>`;
 }
 
 async function loadPage() {
