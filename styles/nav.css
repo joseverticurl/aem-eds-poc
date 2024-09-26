@@ -1,0 +1,138 @@
+div.nav-wrapper {
+    background-color: transparent !important;
+}
+
+div.nav-wrapper.scrolled-nav {
+    background-color: #ffffff !important;
+}
+
+nav#nav {
+    min-height: 120px;
+}
+
+nav#nav.scrolled-nav {
+    background-color: #ffffff;
+    min-height: 60px;
+}
+
+nav#nav .section.nav-sections .default-content-wrapper {
+    max-width: unset !important;
+}
+
+nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li {
+    color: #000;
+}
+
+nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li picture:first-child img {
+    display: none !important;
+}
+
+nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li picture:nth-child(2) img {
+    width: auto;
+    display: block !important;
+    max-width: 100%;
+    border: none;
+    margin-top: 6px;
+}
+
+nav#nav .section.nav-brand {
+    display: none;
+}
+
+nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul {
+    align-items: center !important;
+}
+
+nav#nav .section.nav-sections .default-content-wrapper ul {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+nav#nav .section.nav-sections .default-content-wrapper ul li {
+    flex: 0 0 12%;
+    padding-right: 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+nav#nav .section.nav-sections .default-content-wrapper ul li::after {
+    content: none;
+}
+
+/* nav#nav .section.nav-sections .default-content-wrapper ul li picture img {
+    width: 90%;
+    display: block;
+    max-width: 100%;
+    border: none;
+} */
+
+nav#nav .section.nav-sections .default-content-wrapper ul li picture:first-child img {
+    width: 90%;
+    display: block;
+    max-width: 100%;
+    border: none;
+    margin: auto;
+    width: 111px;
+    height: 80px;
+}
+
+nav#nav .section.nav-sections .default-content-wrapper ul li picture:nth-child(2) img {
+    display: none;
+}
+
+nav#nav .section.nav-sections .default-content-wrapper ul li ul li {
+    color: #000;
+}
+
+main {
+    margin-top: -100px;
+}
+
+main div.hero-container {
+    position: relative;
+}
+
+main div.hero-container,
+main div.hero-container .hero-wrapper {
+    height: 500px;
+}
+
+main .hero.block {
+    padding-top: 0px;
+    height: 500px;
+}
+
+main .hero.block div div p picture img {
+    height: 500px;
+}
+
+main .hero.block div div p h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30%;
+    text-align: center;
+}
+
+main .hero.block div div p h1 span:first-child {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: #fff;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+main .hero.block div div p h1 span:nth-child(2) {
+    font-size: 3.875rem;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: -2.07px;
+    text-align: center;
+    line-height: 76px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .06);
+}
