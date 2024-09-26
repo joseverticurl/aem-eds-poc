@@ -32,17 +32,20 @@ nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li {
 }
 
 nav#nav .section.nav-sections .default-content-wrapper ul li picture:first-child img {
-    width: 90%;
     display: block;
     max-width: 100%;
     border: none;
     margin: auto;
-    width: 111px;
     height: 80px;
+    width: 111px;
 }
 
 nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li picture:first-child img {
     display: none !important;
+}
+
+nav#nav .section.nav-sections .default-content-wrapper ul li picture:nth-child(2) img {
+    display: none;
 }
 
 nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li picture:nth-child(2) img {
@@ -51,10 +54,6 @@ nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li pictur
     max-width: 100%;
     border: none;
     margin-top: 6px;
-}
-
-nav#nav .section.nav-sections .default-content-wrapper ul li picture:nth-child(2) img {
-    display: none;
 }
 
 nav#nav .section.nav-brand {
