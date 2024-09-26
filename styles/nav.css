@@ -27,16 +27,8 @@ nav#nav .section.nav-sections .default-content-wrapper ul li {
     justify-content: center;
 }
 
-nav#nav .section.nav-sections .default-content-wrapper ul li ul li {
-    color: #000;
-}
-
 nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li {
     color: #000;
-}
-
-nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li picture:first-child img {
-    display: none !important;
 }
 
 nav#nav .section.nav-sections .default-content-wrapper ul li picture:first-child img {
@@ -49,6 +41,10 @@ nav#nav .section.nav-sections .default-content-wrapper ul li picture:first-child
     height: 80px;
 }
 
+nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li picture:first-child img {
+    display: none !important;
+}
+
 nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li picture:nth-child(2) img {
     width: auto;
     display: block !important;
@@ -57,10 +53,13 @@ nav#nav.scrolled-nav .section.nav-sections .default-content-wrapper ul li pictur
     margin-top: 6px;
 }
 
-nav#nav .section.nav-brand {
+nav#nav .section.nav-sections .default-content-wrapper ul li picture:nth-child(2) img {
     display: none;
 }
 
+nav#nav .section.nav-brand {
+    display: none;
+}
 
 nav#nav .section.nav-sections .default-content-wrapper ul {
     width: 100%;
@@ -84,12 +83,6 @@ nav#nav .section.nav-sections .default-content-wrapper ul li::after {
     border: none;
 } */
 
-
-
-nav#nav .section.nav-sections .default-content-wrapper ul li picture:nth-child(2) img {
-    display: none;
-}
-
 main {
     margin-top: -100px;
 }
@@ -104,7 +97,7 @@ main div.hero-container .hero-wrapper {
 }
 
 main .hero.block {
-    padding-top: 0px;
+    padding-top: 0;
     height: 500px;
 }
 
@@ -137,5 +130,5 @@ main .hero.block div div p h1 span:nth-child(2) {
     letter-spacing: -2.07px;
     text-align: center;
     line-height: 76px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, .06);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 6%);
 }
