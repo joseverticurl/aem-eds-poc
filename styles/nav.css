@@ -106,10 +106,6 @@ main .hero.block {
     height: 500px;
 }
 
-main .hero.block div div p picture img {
-    height: 500px;
-}
-
 main .hero.block div div p h1 {
     position: absolute;
     left: 50%;
