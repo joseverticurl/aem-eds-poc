@@ -1,8 +1,9 @@
 {
+  "project": "aem-eds-training",
   "copyMode": [
     {
-      "mimeType": "image/*",
-      "value": "path"
+      "mimeType" : "image/*",
+      "value" : "reference"
     }
   ]
 }
