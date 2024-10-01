@@ -14,7 +14,23 @@ export default async function decorate(block) {
   // decorate footer DOM
   block.textContent = '';
   const footer = document.createElement('div');
-  while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
-
+  footer.classList.add('footer-container');
+  const fragmentContent = fragment.firstElementChild;
+  const elements = fragmentContent && fragmentContent.querySelectorAll('p');
+  if (elements && elements.length > 0) {
+    const sectionLeft = document.createElement('div');
+    sectionLeft.classList.add('left-section');
+    const sectionRight = document.createElement('div');
+    sectionRight.classList.add('right-section');
+    elements.forEach((ele, index) => {
+      if (index === 0) {
+        sectionLeft.append(ele);
+      } else {
+        sectionRight.append(ele);
+      }
+    });
+    footer.append(sectionLeft);
+    footer.append(sectionRight);
+  }
   block.append(footer);
 }

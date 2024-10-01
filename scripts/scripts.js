@@ -113,13 +113,31 @@ async function loadLazy(doc) {
   loadFonts();
 }
 
+function setScrollEventForNav() {
+  const elementWrapper = document.querySelector('.nav-wrapper');
+  const element = document.querySelector('#nav');
+  window.addEventListener('scroll', () => {
+    const verticalScrollPosition = window.pageYOffset;
+    if (verticalScrollPosition > 200) {
+      elementWrapper.classList.add('scrolled-nav');
+      element.classList.add('scrolled-nav');
+    } else {
+      elementWrapper.classList.remove('scrolled-nav');
+      element.classList.remove('scrolled-nav');
+    }
+  });
+}
+
 /**
  * Loads everything that happens a lot later,
  * without impacting the user experience.
  */
 function loadDelayed() {
   // eslint-disable-next-line import/no-cycle
-  window.setTimeout(() => import('./delayed.js'), 3000);
+  window.setTimeout(() => {
+    import('./delayed.js');
+    setScrollEventForNav();
+  }, 3000);
   // load anything that can be postponed to the latest here
 }
 

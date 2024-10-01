@@ -1,0 +1,25 @@
+.embedvideo-wrapper {
+    /* padding-top: 150px !important; */
+    width: 100%;
+    padding-bottom: 100px !important;
+}
+
+.embedvideo-wrapper .embedvideo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.embedvideo-wrapper .embedvideo p.read-more {
+    font-size: 1rem;
+    line-height: 28px;
+    color: #909090;
+    margin-top: 10px;
+}
+
+.embedvideo-wrapper .embedvideo p.read-more a {
+    color: #ed1c24;
+    text-decoration: underline;
+}
