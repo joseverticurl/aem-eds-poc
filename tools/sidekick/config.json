@@ -17,20 +17,8 @@
         "environments": ["edit"],
         "isPalette": true,
         "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:600px; height: calc(100vh - 60px)",
-        "url": "https://s7sps1.scene7.com/IpsWeb/", 
-        "auth": {
-          "type": "none"
-        },
-        "settings": {
-          "image": {
-            "icon": "icon-image",
-            "label": "Dynamic Media Assets"
-          },
-          "video": {
-            "icon": "icon-video",
-            "label": "Dynamic Media Videos"
-          }
-        }
+        "includePaths": ["**.docx**"],
+        "url": "https://s7ap1.scene7.com/is/image/wpppartnersandbox/images"
       }
     ]
   }
