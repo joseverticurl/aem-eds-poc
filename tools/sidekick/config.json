@@ -15,10 +15,23 @@
         "id": "dynamic-media",
         "title": "Dynamic Media Library",
         "environments": ["edit"],
-        "url": "https://s7ap1.scene7.com",
-        "isPalette": true,
-        "includePaths": ["**.docx**"],
-        "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:600px; height: calc(100vh - 60px)"
+        "service": {
+          "url": "https://s7ap1.scene7.com/is/image/wpppartnersandbox",
+          "type": "dynamic-media"
+        },
+        "auth": {
+          "type": "none"
+        },
+        "settings": {
+          "image": {
+            "icon": "icon-image",
+            "label": "Dynamic Media Assets"
+          },
+          "video": {
+            "icon": "icon-video",
+            "label": "Dynamic Media Videos"
+          }
+        }
       }
     ]
   }
