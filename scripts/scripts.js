@@ -13,6 +13,7 @@ import {
   loadCSS,
   sampleRUM,
 } from './aem.js';
+import './aadatalayer.js'
 
 /**
  * Builds hero block and prepends to main in a new section.
