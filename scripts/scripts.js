@@ -14,7 +14,11 @@ import {
   sampleRUM,
 } from './aem.js';
 import './aadatalayer.js';
-import 'https://assets.adobedtm.com/a7040fd7d6ac/0a6a1797b921/launch-da32d432a842-staging.min.js';
+
+(async () => {
+  await import('./launch-da32d432a842-staging.min.js');
+  console.log('Script loaded successfully.');
+})();
 
 /**
  * Builds hero block and prepends to main in a new section.
