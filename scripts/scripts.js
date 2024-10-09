@@ -15,6 +15,13 @@ import {
 } from './aem.js';
 import './aadatalayer.js';
 
+(function() {
+  var script = document.createElement('script');
+  script.src = 'https://assets.adobedtm.com/a7040fd7d6ac/0a6a1797b921/launch-da32d432a842-staging.min.js';
+  script.async = true; // Ensures the script is loaded asynchronously
+  document.head.appendChild(script); // Append the script to the head of the document
+})();
+
 /**
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element
