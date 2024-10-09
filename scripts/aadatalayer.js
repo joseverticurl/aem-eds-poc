@@ -2,7 +2,7 @@ window.digitalData = {
   page: {
     pageInfo: {
       pageName: document.title || 'unknown-page',
-      pageUrl: window.location.href
+      pageUrl: window.location.href,
     }
   }    
 };
