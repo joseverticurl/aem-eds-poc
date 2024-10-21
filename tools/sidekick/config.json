@@ -20,5 +20,17 @@
         "includePaths": ["**.docx**"],
         "url": "https://s7ap1.scene7.com/is/image/wpppartnersandbox/images"
       }
-    ]
+    ],    
+    "toolbar": {
+      "buttons": {
+          "publish": {
+              "text": "Publish",
+              "handler": "publishContent",
+              "renderCondition": {
+                  "type": "permissions",
+                  "permissions": ["replicate"]
+              }
+          }
+      }
+   }
   }
