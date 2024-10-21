@@ -13,12 +13,6 @@ import {
   loadCSS,
   sampleRUM,
 } from './aem.js';
-import './aadatalayer.js';
-
-(async () => {
-  await import('./launch-da32d432a842-staging.min.js');
-  console.log('Script loaded successfully.');
-})();
 
 /**
  * Builds hero block and prepends to main in a new section.
