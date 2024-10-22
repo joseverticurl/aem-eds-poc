@@ -1,13 +1,8 @@
-{
-  "assetSource": {
-      "name": "dynamic-media",
-      "type": "dynamicMedia",
-      "url": "https://s7ap1.scene7.com/is/image/wpppartnersandbox",
-      "copyMode": [
-          {
-              "mimeType": "image/*",
-              "value": "reference"
-          }
-      ]
-  }
-}
+{ 
+	"copyMode": [ 
+    	{ 
+        	"mimeType": "image/*", 
+        	"value": "reference" 
+    	} 
+	] 
+} 

@@ -1,5 +1,5 @@
 {
-    "project": "aem-eds-training",
+    "project": "aem-eds-poc",
     "plugins": [
       {
         "id": "asset-library",
@@ -10,27 +10,6 @@
         "includePaths": ["**.docx**"],
         "passConfig": true,
         "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:600px; height: calc(100vh - 60px)"
-      },
-      {
-        "id": "dynamic-media",
-        "title": "Dynamic Media Library",
-        "environments": ["edit"],
-        "isPalette": true,
-        "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:600px; height: calc(100vh - 60px)",
-        "includePaths": ["**.docx**"],
-        "url": "https://s7ap1.scene7.com/is/image/wpppartnersandbox/images"
       }
-    ],    
-    "toolbar": {
-      "buttons": {
-          "publish": {
-              "text": "Publish",
-              "handler": "publishContent",
-              "renderCondition": {
-                  "type": "permissions",
-                  "permissions": ["replicate"]
-              }
-          }
-      }
-   }
-  }
+    ]
+}
