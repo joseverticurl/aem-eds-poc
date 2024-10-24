@@ -19,7 +19,7 @@
         "environments": [
           "edit"
         ],
-        "url": "/adobe/dynamicmedia/deliver",
+        "url": "https://delivery-p35060-e135910.adobeaemcloud.com/adobe/dynamicmedia/deliver",
         "aemTierType": ["delivery"],
         "repo:repositoryId": "delivery-p35060-e135910.adobeaemcloud.com",
         "isPalette": true,
