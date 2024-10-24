@@ -5,11 +5,11 @@
         "id": "asset-library",
         "title": "AEM Assets Library",
         "environments": ["edit"],
-        "url": "ions/https://experience.adobe.com/solutCQ-assets-selectors/static-assets/resources/franklin/asset-selector.html?rail=false",
+        "url": "https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/franklin/asset-selector.html",
         "isPalette": true,
         "includePaths": ["**.docx**"],
         "passConfig": true,
-        "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:900px; height: calc(100vh - 60px)"
+        "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:400px; height: calc(100vh - 60px)"
       },
       {
         "id": "asset-library-stage",
@@ -17,7 +17,6 @@
         "environments": [
           "edit"
         ],
-        "aemTierType": ["delivery"],
         "url": "/aem-asset-selector-stage",
         "isPalette": true,
         "includePaths": [ "**.docx**" ],
